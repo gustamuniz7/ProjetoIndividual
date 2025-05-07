@@ -29,10 +29,10 @@ body{
 
 .header .navbar{
     color: black;
-    list-style-type: none;
+    
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     
 }
@@ -42,7 +42,7 @@ body{
     
 }
 .navbar img{
-    width: 40px;;
+    width: 40px;
 }
 
 .navbar a:hover {
@@ -60,6 +60,7 @@ body{
     background-position: center bottom;
     box-shadow: 0 -10px 20px white inset;
 }
+
 
 .banner .container p{
     color: rgb(255, 255, 255);
@@ -82,10 +83,11 @@ body{
 .banner .container .seta a{
     display: flex;
     color: white;
+    font-weight: bold;
 }
 
 .banner .container p span{
-    font-weight: 600;
+    font-weight: 600px;
     color: white;
 }
 
@@ -219,7 +221,7 @@ body{
 }
 
 .estadio{
-    background-image: url("./fundo-spfc.png");
+    background-image: url("../Imgs/fundo-spfc.png");
     height: 700px;
     justify-content: space-around;
     ;

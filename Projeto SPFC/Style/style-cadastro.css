@@ -39,7 +39,7 @@ body {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 .navbar a {
@@ -56,12 +56,13 @@ body {
   width: 40px;
 }
 .cadastro {
-  height: 1200px;
+  height: 900px;
   width: 100%;
-  background-image: url("./fundo-spfc.png");
+  background-image: url("../morumbi-tour.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
+  backdrop-filter: brightness(50%);
   
 }
 
@@ -72,47 +73,11 @@ body {
   text-align: center;
 }
 
-.cadastro .container .mens {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 10px;
-  color: black;
-  font-size: 20px;
-  font-weight: 300px;
-}
 
-.cadastro .container .mens a {
-  background-color: rgba(128, 128, 128, 0.637);
-  padding: 15px;
-  width: 200px;
-  border-radius: 30px;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 25px;
-  align-items: center;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
-}
-
-.cadastro .container .mens a img {
-  height: 35px;
-}
-
-.cadastro .container .mens h1 {
-  margin: 0;
-  color: black;
-  width: 70%;
-  font-size: 50px;
-}
 
 .cadastro .container .nav {
-  background-color: rgba(0, 0, 0, 0.200);
-  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 450px;
   height: fit-content;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
@@ -121,11 +86,12 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  margin: auto;
 }
 
 .cadastro .container .nav .boxer {
-  width: 800px;
-  height: fit-content;
+  width: 500px;
+  height: 520px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -135,8 +101,8 @@ body {
 }
 
 .cadastro .container .nav .box {
-  width: 500px;
-  height: fit-content;
+  width: 300px;
+  height: 300px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -147,13 +113,14 @@ body {
 
 .cadastro .container .nav .box p {
   font-size: 20px;
-  color: black;
+  color: white;
   font-weight: bold;
   display: flex;
 }
 
 .cadastro .container .nav .box input {
-  width: 400px;
+  width: 250px;
+  height: 100px;
   padding: 10px;
   font-size: larger;
   border-radius: 20px;
@@ -193,50 +160,3 @@ span {
   font-size: 20px;
 }
 
-.footer {
-  background-color: rgb(0, 0, 0);
-  padding: 20px 0;
-}
-
-.footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer .logo {
-  height: 60px;
-}
-
-.footer p {
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-.footer .sub-info {
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.footer .email-link {
-  color: white;
-  text-decoration: underline;
-}
