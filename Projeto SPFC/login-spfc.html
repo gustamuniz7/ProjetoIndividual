@@ -17,9 +17,9 @@
           <h5>
             <a href="dryflow-index.html#sobrenos">Sobre nós</a>
           </h5>
-          <li><img src="./Imgs/spfc-logo.png" /></li>
+          <li><a href="./index-spfc.html"><img src="./Imgs/spfc-logo.png"></a></li>
           <h5>
-            <a href="./quiz.html'">Quiz</a>
+            <a href="./quiz.html">Quiz</a>
           </h5>
           <h5>
             <a href="#">Login</a>
@@ -84,13 +84,13 @@
       } else if (tamanhoSenha <= 5) {
         mensLogin = "<span><br>Senha inválida</span>";
       } else if (
-        (email == "brandao@sptech.com" && senha == "654321") ||
-        (email == "julia@sptech.com" && senha == "654321")
+        (email == "lucasmoura@gmail.com" && senha == "123456") ||
+        (email == "gustavo@sptech.school" && senha == "102102")
       ) {
-        window.location.href = "dashboard.html";
+        window.location.href = "index-spfc.html";
       } else if (
-        email !== "julia@sptech.com" &&
-        email !== "brandao@sptech.com"
+        (email != "lucasmoura@gmail.com" && senha != "123456") ||
+        (email != "gustavo@sptech.school" && senha != "102102")
       ) {
         mensLogin =
           "<span><br>Email não cadastrado. Realize o cadastro.</span>";

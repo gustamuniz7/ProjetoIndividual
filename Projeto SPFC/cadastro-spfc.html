@@ -19,9 +19,7 @@
           </h5>
           <li><img src="./Imgs/spfc-logo.png" /></li>
           <h5>
-            <a href=""
-              >Quiz</a
-            >
+            <a href="./quiz.html">Quiz</a>
           </h5>
           <h5>
             <a href="./login-spfc.html">Login</a>
@@ -39,7 +37,7 @@
               <input
                 placeholder="Insira seu nome de usuário"
                 type="text"
-                id="ipt_nomeEmpresa"
+                id="ipt_nomeUsuario"
                 
               />
               <p>E-mail:</p>
@@ -75,16 +73,9 @@
   </body>
   <script>
     function cadastro() {
-      var nomeEmpresa = ipt_nomeEmpresa.value;
-      var cnpj = ipt_cnpj.value;
-      var telefone = ipt_telefone.value;
-      var email = ipt_email.value;
-      var senha = ipt_senha.value;
-      var rua = ipt_rua.value;
-      var numero = Number(ipt_numero.value);
-      var cidade = ipt_cidade.value;
-      var cep = ipt_cep.value;
-      var logradouro = ipt_logradouro.value;
+      var nome = ipt_nomeUsuario.value
+      var email = ipt_email.value 
+      var senha = ipt_senha.value
 
       var mensCadastro;
 
@@ -94,25 +85,12 @@
       var indiceArroba = email.indexOf("@");
       var contemArroba = indiceArroba >= 0;
 
-      var cnpjValido = cnpj.length;
-
-      var telefoneValido = telefone.length;
-      var indiceTraço = telefone.indexOf("-");
-      var indiceParenteses = telefone.indexOf("(") || telefone.indexOf(")");
-
-      var cepValido = cep.length;
+     
 
       if (
-        nomeEmpresa == "" ||
-        cnpj == "" ||
-        telefone == "" ||
+        ipt_nomeUsuario == "" ||
         email == "" ||
-        senha == "" ||
-        rua == "" ||
-        numero == "" ||
-        cidade == "" ||
-        cep == "" ||
-        logradouro == ""
+        senha == ""
       ) {
         mensCadastro =
           "<span><br>Todos os campos devem ser preenchidos!</span>";

@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "metrophobic";
 }
 
 body {
-    background-color: red;
+    background-image: url("../vestiario-spfc.webp");
+    background-size: cover;
 }
 
 .container{
@@ -22,7 +27,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 50;
-    height: 100px;
+    height: 80px;
 }
 
 .header .navbar{
@@ -47,13 +52,20 @@ body {
     color: red;
 }
 
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .app{
     background: white;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    border-radius: 10px;
     padding: 30px;
+    margin-top: 150px;
 }
 
 .app h1{
@@ -108,4 +120,12 @@ body {
     cursor: pointer;
     display: none;
     /* deixa o botao next invisivel e aparece na hora que clicar */
+}
+
+.correct {
+    color: greenyellow;
+}
+
+.incorrect {
+    color: red;
 }
