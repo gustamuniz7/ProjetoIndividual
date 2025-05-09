@@ -10,6 +10,9 @@
 body {
     background-image: url("../vestiario-spfc.webp");
     background-size: cover;
+    backdrop-filter: brightness(40%);
+    height: 100vh;
+    background-position: center bottom;
 }
 
 .container{
@@ -66,11 +69,13 @@ body {
     border-radius: 10px;
     padding: 30px;
     margin-top: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
 .app h1{
     font-weight: 25px;
-    color: red;
+    color: black;
     font-weight: 600px;
     padding-bottom: 30px;
    
@@ -78,54 +83,57 @@ body {
 
 .quiz {
     padding: 20px 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.quiz h2{
-    font-size: 18px;
-    color: darkred;
-    font-weight: 600;
-}
 
-.btn {
-    background: white;
-    color: black;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
 
-.btn:hover:not([disabled]){
+.alternativa:hover:not([disabled]){
     background: black;
     color: white;
 }
 
-.btn:disabled {
+.alternativa:disabled {
     cursor: no-drop;
 }
 
-#nextbtn {
-    background-color: red;
+.nextbtn {
+    background-color: black;
     color: white;
     font-weight: 500;
     width: 150px;
-    border: 0;
+    border: auto black;
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 10px;
     cursor: pointer;
-    display: none;
-    /* deixa o botao next invisivel e aparece na hora que clicar */
 }
 
-.correct {
-    color: greenyellow;
+
+/* Esconde os radio buttons */
+.radio-btn {
+  display: none;
 }
 
-.incorrect {
-    color: red;
+/* Estilo dos botões de alternativa */
+.alternativa {
+  display: block;
+  background: white;
+  color: black;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Quando o radio estiver selecionado, destaque a label */
+.radio-btn:checked + .alternativa {
+  background-color: rgb(252, 57, 57);
+  color: white;
 }
